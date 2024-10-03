@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>CRUDS Management</h1>
+</header>
+
+<div class="container">
+    <h2>Add New Item</h2>
+    <div class="item-form">
+        <input id="item-name" type="text" placeholder="Item Name">
+        <input id="item-price" type="number" placeholder="Price">
+        <input id="item-tax" type="number" placeholder="Tax %">
+        <input id="item-discount" type="number" placeholder="Discount %">
+        <input id="item-category" type="text" placeholder="Category"> <!-- New category input -->
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <h2>Items List</h2>
+    <div class="item-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Tax</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th> <!-- New category header -->
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="item-list-body">
+                <!-- Items will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
